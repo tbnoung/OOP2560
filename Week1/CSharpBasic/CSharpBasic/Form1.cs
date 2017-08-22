@@ -19,17 +19,43 @@ namespace CSharpBasic
 
         private void button1_Click(object sender, EventArgs e)
         {
-            textBox2.Text = comboBox1.Text;
-            if (textBox2.Text == "")
-                return;
-            switch (comboBox1.SelectedIndex)
-            {
-                case 0: textBox1.Text = sizeof(bool).ToString();
-                    break;
-                case 1: textBox1.Text = sizeof(char).ToString();
-                    break;
+            textBox1.Text = "bool";
+            textBox2.Text = sizeof(bool).ToString();
+  
+        }
 
-            }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "char";
+            textBox2.Text = sizeof(char).ToString();
+            textBox3.Text = (char.MinValue - '\0' ).ToString();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "unsigned int 16 bit";
+            textBox2.Text = sizeof(UInt16).ToString();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "Sbyte";
+            textBox2.Text = sizeof(SByte).ToString();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "Long";
+            textBox2.Text = sizeof(long).ToString();
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "float";
+            textBox2.Text = sizeof(float).ToString();
+            textBox3.Text = float.MinValue.ToString();
+            textBox4.Text = float.MaxValue.ToString();
 
         }
     }
