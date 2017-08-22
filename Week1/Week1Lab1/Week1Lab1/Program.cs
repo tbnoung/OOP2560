@@ -12,4 +12,9 @@ namespace Week1Lab1
         {
         }
     }
+
+    class YourClassname
+    {
+
+    }
 }
